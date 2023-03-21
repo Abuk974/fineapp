@@ -22,7 +22,7 @@ function formatDate(timestamp) {
     return `${day} ${hours}:${minutes}`;
   }
   
-  function displayForecast() {
+  function displayForecast(response) {
     let forecastElement = document.querySelector("#forecast");
   
     let days = ["Thu", "Fri", "Sat", "Sun","Mon"] ;
@@ -52,7 +52,9 @@ function formatDate(timestamp) {
     console.log(forecastHTML);
   }
 
-
+function getForecast(response){
+ 
+}
 
   function displayTemperature(response) {
     let temperatureElement = document.querySelector("#temperature");
@@ -76,6 +78,8 @@ function formatDate(timestamp) {
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
     iconElement.setAttribute("alt", response.data.weather[0].description);
+
+    getForecast(response.data.coord)
   }
   
   function search(city) {
