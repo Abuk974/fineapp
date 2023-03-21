@@ -2,7 +2,7 @@ body {
     font-family: arial, sans-serif;
   }
 .container{
-  background-color: rgb(72, 17, 160);
+  background-color: rgb(9, 2, 21);
   max-width: 500px;
   color: rgb(237, 241, 245);
   border: 1px;
@@ -78,4 +78,18 @@ body {
   
   .weather-temperature .active:hover {
     text-decoration: none;
+  }
+  .Weather-forecast{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .weather-forecast-date{
+    font-size: 16px;
+    opacity: 0.6;
+  }
+  .weather-forecast-temperature-min{
+opacity: 0.6;
+  }
+  .weather-forecast-temperature{
+    font-size: 16px;
   }
